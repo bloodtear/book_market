@@ -1,0 +1,599 @@
+/*LOGO的大小*/
+#logo {
+  width:100%;
+  height: 100px;
+} 
+
+body{
+    font-family:  Microsoft YaHei ;
+
+   /* -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;*/
+    
+}
+
+/*主框架BODY*/
+#mainbody { 
+    min-height:600px;
+}
+
+/*尾部的样式*/
+#myfooter {
+    background-color: #eee;
+    border-radius: 3px;
+    height:40px;
+}
+
+/*登录导航条的样式*/
+.admin_nav li{
+    width:280px;
+    text-align: center;
+
+}
+
+/*缩略图的排列顺序*/
+#thumbnail img:hover {
+    box-shadow: 0 0 30px #00ae9d;
+    transition: all 0.2s;
+}
+
+/*水平居中*/
+.horizontal-center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,0 );
+}
+
+/*垂直居中*/
+.vertical-center {
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+.Absolute-Center {  
+  margin: auto;  
+  position: absolute;  
+  top: 0; left: 0; bottom: 0; right: 0;  
+}  
+
+.is-Transformed {   
+  width: 50%;  
+  margin: auto;  
+  position: absolute;  
+  top: 50%; left: 50%;  
+  -webkit-transform: translate(-50%,-50%);  
+      -ms-transform: translate(-50%,-50%);  
+          transform: translate(-50%,-50%);  
+}  
+
+/*loginup*/
+.nav-tabs li {
+    width:160px;
+    text-align: center;
+}
+
+.profiletab {
+    padding: 10px;
+    border-radius:5px;
+    background-color:#eee;
+}
+
+/*新增收货地址的表单中的必填项为红色的**/
+.form-group span {
+    color:red;
+}
+
+.addr_detail {
+    font-size: 12px;
+    color:grey;
+}
+
+
+
+/*展示收货地址的细节的左侧span中为向右靠齐*/
+.addr_detail span{
+    float: right;
+    
+}
+/*展示收货地址的细节的左侧列大小为30%*/
+.table-left {
+    width: 14%;
+}
+
+.border {
+    border:1px solid;
+}
+
+#cart_items {
+    font-size:small;
+}
+#cart_items p {
+    font-size: small;
+    margin: 0;
+}
+
+#cart_items tr td{
+    margin-bottom: 30px;
+}
+
+
+.plus,.minus{
+    float:left;
+    height:26px;
+    width:24px;
+    border:1px solid #eee;
+    padding:2px 5px 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#cart_success {
+    padding-left:30px;
+}
+
+.item-del {
+    width:2em;
+    color: grey;
+}
+
+/*设置默认收货地址，编辑地址，删除btn都为小手的效果*/
+.set_def_addr,.edit_btn,.delete_btn,.item-del,#want_del_items,#modify_invoice_info,.invoice_title,#new_invoice_title,.invoice_title_text {
+    cursor: pointer;
+}
+
+
+/*被选中的状态，颜色发生变化*/
+.selected {
+    background-color: #fff4e8;
+}
+
+/*购物车中的物品的checkbox样式*/
+input.item_check{
+    padding:0 15px 0 15px;
+    color: red;
+}
+
+.price_total {
+    font-weight: bold;
+}
+
+#preview img{
+    width:300px;
+}
+
+#ship_person_info{
+    position: relative;
+}
+#ship_person_info_title {
+    position: absolute;
+    left: 0;
+}
+
+#new_ship_addr {
+    position: absolute;
+    right: 0;
+}
+
+.order_title{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.order_div{
+    padding:25px;
+    border-bottom:2px solid #eee;
+}
+
+.pay_moder,.invoice_mode,.invoice_content{
+    width:140px;
+    height:38px;
+    border:1px #eee solid;
+    padding:7px;
+    color:grey;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.invoice_mode,.invoice_content{
+    width:100px;
+}
+
+
+.choosing{
+    border:2px solid red !important;
+}
+
+.choosed{
+    border:2px solid red !important;
+    background-image:url(../../images/selected-icon.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+
+.bg-pink {
+    background-color: #fff3f3;
+}
+
+.addr_control {
+    color:#585eaa;
+}
+
+.addr_control>span {
+    float:right;
+    margin-right:10px;
+}
+
+
+
+#order_make_btn {
+    margin-left:20px;
+    height:40px;width:140px;
+    background-color:red;
+    color:white;padding:6px;
+    font-size:18px;
+    border-radius:3px;
+    cursor:pointer
+}
+
+#will_pay {
+    padding:3px;
+    font-size:22px;
+    color:grey;
+    margin-right:10px;
+}
+
+#make_order{
+    padding:20px;
+}
+
+#list-left{
+    padding:20px;background-color:#eee;
+    height:100%;display:block;color:grey;
+}
+
+#list-right{
+    padding:20px;background-color:#f3fbfe;
+}
+
+#order_list{
+    padding:15px;height:100%;
+}
+
+#order_info{
+    border:1px solid #eee;
+}
+
+#order_hint{
+    font-size:18px;color:#999;
+}
+
+#address_final{
+    background-color:#eee;margin-top:10px;
+}
+
+#modify_invoice_form .modal-body > div {
+    margin-bottom:20px;
+}
+
+.invoice_title,.new_title {
+    border:1px solid #eee;
+    padding:5px;
+    margin:5px 0 0 0;
+}
+
+.invoice_label{
+padding-top:10px;
+    color:#999;
+}
+
+.invoice_control_list{
+float:right;color:#585eaa;
+}
+
+#new_invoice_title,.invoice_save_new,#modify_invoice_info{
+color:#585eaa;
+}
+
+.invoice_title_text{
+    border: none;
+}
+
+.invoice_save_new{
+    margin-right:5px;
+    margin-left:5px;
+    float:right;
+}
+
+.invoice_control_list>span{
+    margin-right:5px;
+}
+
+.selected_invoice_info{
+    color:grey;
+}
+
+#canvas_background {
+    min-height:400px;
+    width:1000px;
+    background-color:#f8f8f8;
+    padding: 30px;
+}
+
+.label_upload{
+    font-weight: 100;
+    color:grey;
+    font-size:10px;
+}
+
+#label_upload_images {
+    position:relative;
+    top:140px
+}
+
+.a-upload {
+    width:183px;
+    padding: 10px 10px;
+    height: 44px;
+
+    line-height: 20px;
+    cursor: pointer;
+    color: #888;
+    background: #fafafa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    display:    block;
+    *display: inline;
+    *zoom: 1;
+    color:white;
+    position:relative;
+    top:130px;
+    background-color:#45b97c;
+    
+}
+
+.a-upload input {
+    width:183px;
+    height:44px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    position: relative;
+    top:-30px;
+    left:-10px;
+}
+
+.control_bar {
+    display:block;
+    padding:10px;
+    position: relative;
+    left:60px;
+    width:400px;
+}
+
+.control_bar button{
+    width:80px;
+    margin-right: 15px;
+}
+
+#preview_images {
+    padding:10px;
+}
+
+
+#upload_more {
+    width:120px;
+    height:35px;
+}
+#upload_more input {
+    width:120px;
+    height:35px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    position: relative;
+    top:-28px;
+    left:-12px;
+}
+
+.uploaded_img{
+    border:1px solid #dfdfdf;
+    width:170px;
+    height:200px;
+    display:inline-block;
+    margin:25px;
+}
+
+.uploaded_img img{
+    width:168px;
+    height:168px;
+}
+
+.uploaded_img div{
+    padding:5px;
+    border-top:#dfdfdf 1px solid;
+}
+
+.uploaded_img label{
+    margin: 0;
+    cursor: pointer;
+    position: relative;
+    top:-3px;
+    
+}
+
+.upload_img_control{
+    font-size:10px;
+    height:30px;
+    margin:0;
+}
+
+.upload_img_control input{
+    cursor: pointer;
+}
+
+.delete_self{
+    float:right;
+    cursor: pointer;
+    color: #585eaa;
+}
+
+.thumb_img {
+    border:1px solid #dfdfdf;
+    width:54px;
+    height:54px;
+    margin-left:10px;
+    margin-right:10px;
+    vertical-align:baseline;
+    float:left;
+}
+
+.thumb_img_hover{
+    border:red 1px solid !important ;
+}
+
+.thumb_img img{
+    width:50px;
+    height:50px;
+}
+
+.thumb_imgs_module{
+    display: inline-block;
+    margin-top:20px;
+
+}
+
+.thumb_imgs{
+    display: inline-block;
+    width:370px;
+    overflow: hidden;
+
+}
+
+.thumb_imgs_list{
+    width:auto;
+    list-style: none;
+    position: relative;
+    height:54px;
+}
+
+.thumb_imgs_list li{
+    display: inline-block;
+}
+
+
+.icon_left,.icon_right{
+    height:54px;
+    display: inline-block;
+    width:14px;
+}
+
+.icon_left_cannot{
+    background-position:-56px -346px;
+    background-image:url(../../images/newicon20140910.png);
+}
+
+.icon_right_cannot{
+    background-position:-70px -346px;
+    background-image:url(../../images/newicon20140910.png);
+}
+
+.icon_right_hover{
+    background-position:-42px -346px;
+    background-image:url(../../images/newicon20140910.png);
+    cursor: pointer;
+}
+
+.icon_left_hover{
+    background-position:-28px -346px;
+    background-image:url(../../images/newicon20140910.png);
+    cursor: pointer;
+}
+
+.img_preview{
+    height: 350px;
+}
+
+.img_preview img{
+    max-height: 350px;
+}
+
+.td-w-95{
+    width:115px;
+}
+
+#my_orders{
+    font-size:12px;
+}
+
+.order_items td{
+    padding:15px !important;
+}
+
+.order_other_details > div{
+    width:25%;
+    height:280px;
+    padding:25px;
+    border: 1px solid #ddd;
+    float:left;
+}
+
+.order_other_details > div > div,span{
+    padding:2px;
+    color:#999;
+}
+
+.order_other_details h4{
+    font-size:16px;
+    color:#666;
+}
+
+.label_order{
+    width:84px;
+    display: block;
+    margin:0px;
+    float:left;
+}
+
+.order_second_details > div,.order_main_details > div{
+    height:280px;
+    padding:25px;
+    border: 1px solid #ddd;
+    float:left;
+    margin-bottom: 40px;
+}
+order_main_details > div{
+    height:280px;
+    padding:25px;
+    border: 1px solid #ddd;
+    float:left;
+    margin-bottom: 40px;
+}
+
+.order_second_details {
+    border-top: 5px #71b247 solid;
+}
+
+.order_main_detail_body{
+    color:#71b247;
+    font-size:20px;
+    font-weight:400;
+    padding:25px;
+    font-family:'Microsoft YaHei';
+}
+
+.order_history li:first-child {
+    color:red;
+}
+
+.order_history li:first-child span {
+    color:red;
+}
+
+.order_history li {
+    margin-bottom: 10px;
+}
+
